@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "description": "Matthew Hwang's Web Development Portfolio",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "pug": "^2.0.0-rc.2"
+  }
+}
