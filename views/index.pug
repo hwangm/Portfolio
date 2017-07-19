@@ -1,5 +1,43 @@
-html
-    head
-        title Portfolio
-    body
-        h1 Welcome to my portfolio
+extends layout
+
+block content
+    h1.mt-5.mx-auto.w-75.text-center Matthew Hwang <br/ >
+        small Full-stack web developer
+    
+    //- div#intro-container.row
+    //-     img.img-fluid.rounded-circle.col-md-4(src='/images/car.jpg', style="width: 300px; height: 300px;")
+    //-     div#intro.col-md-6.my-auto.text-right
+    //-         p Welcome to my website!
+    div.mt-5#projects-container.row
+        div.prj-img.col-md-8(style='height: 500px;')
+            img.img-fluid(src='/images/wingsapp.png')
+        div.prj-desc.col-md-4
+            h5 Very Well Timed
+            p
+                | This was my first Node project working alongside my brother, who is a designer (check him out at his website 
+                a(href='http://ahwang.me/') ahwang.me
+                |). 
+            p  
+                | I've always hated getting to the airport way too early and having hours of time to kill.
+                | Enter Very Well Timed - input your home address, flight number, and some details (transportation mode,
+                | bags to check, TSA Precheck), and the app will tell you what time you need to leave your house to get to 
+                | your gate 30 minutes before boarding.
+    div.mt-5#projects-container.row
+        div.prj-img.col-md-8(style='height: 500px;')
+            img.img-fluid(src='/images/vbdapp.png')
+        div.prj-desc.col-md-4
+            h5 Virtual Biospecimen Discovery
+            p
+                | Research labs tend to be siloed and not know what specimens other labs may have in their freezers.
+                | I designed and built the Virtual Biospecimen Discovery tool from scratch as a simple matchmaking tool to 
+                | connect researchers with specimens of interest that may be stored at other labs around UC Davis campus. 
+    div.mt-5#projects-container.row
+        div.prj-img.col-md-8(style='height: 500px;')
+            img.img-fluid(src='/images/vbdportalapp.png')
+        div.prj-desc.col-md-4
+            h5 Virtual Biospecimen Discovery Portal
+            p
+                | To lower the activation energy of researchers and administrators to join the VBD and share their specimens, 
+                | I came up with the idea of the VBD Portal, an administrative website with three simple functions: 
+                | register a biobank, import data to the VBD database, and then sign up for monthly reminders to keep the 
+                | data in the VBD up-to-date.
