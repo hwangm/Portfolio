@@ -1,0 +1,3 @@
+$('#vbdportalSlick').slick({
+    dots: true
+});

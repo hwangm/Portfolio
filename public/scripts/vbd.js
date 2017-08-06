@@ -1,0 +1,4 @@
+$('#vbdSlick').slick({
+    dots: true
+
+});
