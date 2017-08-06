@@ -30,6 +30,9 @@ router.get("/VBD", function(req, res){
 router.get("/VBDPortal", function(req, res){
   res.render('vbdportal');
 });
+router.get("/Wings", function(req, res){
+  res.render('wings');
+});
 
 app.use("/",router);
 

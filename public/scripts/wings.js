@@ -1,0 +1,3 @@
+$('#wingsSlick').slick({
+    dots: true
+});

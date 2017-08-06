@@ -1,4 +1,3 @@
 $('#vbdSlick').slick({
     dots: true
-
 });

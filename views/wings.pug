@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    h1.mt-5 Wings
+    h4 
+        small Side project to gain experience with Node.js, Express, and APIs
+    div#wingsSlick
+        img.mt-3.img-fluid(src='/images/wingsapp.png')
+        img.mt-3.img-fluid(src='/images/wings2.png')
+    h3.mt-3 Purpose
+    p 
+    | I created Wings with my brother, Andrew, who is currently a designer at Facebook. We wanted to give people
+    | an answer to the question "When should I arrive at the airport?" that took into account some of the other common 
+    | variables, such as:
+    p
+        ul
+            li Do you have TSA Precheck?
+            li Are you checking any bags in?
+            li How are you getting to the aiport? Car, public transportation? 
+    p
+    | My responsibilities included development and testing of the back-end and front-end for the website. 
+    h3.mt-3 Goals
+    p
+    | My brother and I came up with three guiding principles for the Wings app:
+    p
+        ul
+            li <b>Individualized</b>: the recommendation should be tailored to the circumstances of each individual
+            li <b>Frictionless</b>: it's easy to input the required information and get a recommendation 
+            li <b>Trustworthy</b>: Build trust in the result by providing the rationale behind the recommendation
+    h3.mt-3 Technologies
+    p 
+        ul
+            li Node.js + Express
+            li HTML5 with Pug preprocessor
+            li CSS3 with SASS preprocessing
+            li MomentJS
+            li Restler (REST API package)
+            li Dotenv (managing environment credentials)
+block scripts
+    script(src="/scripts/wings.js")
