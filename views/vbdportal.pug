@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    h1.mt-5 VBD Portal
+    h4 
+        small Website created for biobank administrators to join and import specimen data for the VBD. 
+    div#placeholderForImageCarousel
+        img.mt-3.img-fluid(src='/images/vbdportalapp.png')
+    h3.mt-3 Purpose
+    p 
+    | I created the VBD Portal website to make the data import process for the VBD more streamlined. 
+    | After the first couple biobanks joined the VBD, I reflected on the process and came up with a list of 
+    | critical functions that could be made more efficient by creating a web interface. 
+    p
+    | Similar to the VBD, my responsibilities include design, development, testing, and documentation of the back-end, 
+    | front-end and database for the website. The database for the VBD Portal is shared with the VBD, so I did not have
+    | to create a new database for this website. 
+    h3.mt-3 Background
+    p 
+    | I came up with the idea of the VBD Portal as a way to attract biobanks that wanted 
+    | to join the VBD and share their specimens, but saw the signup process as being too tedious or too much work. 
+    | I thought that if I could create something that helped automate the biobank administrator's processes, they would be 
+    | more likely to want to join the VBD. After several working sessions, I decided that the VBD Portal would 
+    | comprise only 3 primary actions that administrators could perform.
+    h3.mt-3 Goals
+    p
+    | The target audience of the VBD Portal website is biobank administrators who manage specimen data in UCD biobanks. 
+    | The three main functions of the VBD Portal are:
+    p
+        ul
+            li <b>Register a biobank</b>: provide a form for the admin to quickly sign up a biobank for the VBD 
+            li <b>Import data</b>: allow biobanks to upload their latest dataset online and automatically import it into the VBD
+            li 
+            | <b>Create reminders</b>: The VBD should be as up to date as possible. The VBD Portal 
+            | provides a framework for sending automated monthly email reminders asking biobanks to import the latest specimen data. 
+    h3.mt-3 Technologies
+    p 
+        ul
+            li Node.js + Express
+            li MariaDB (MySQL)
+            li HTML5
+            li CSS3 with SASS preprocessing
+            li MomentJS
+
+block scripts

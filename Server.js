@@ -23,8 +23,12 @@ router.get("/About", function(req, res){
   res.render('about');
 });
 
-router.get("/Projects", function(req, res){
-  res.render('projects');
+router.get("/VBD", function(req, res){
+  res.render('vbd');
+});
+
+router.get("/VBDPortal", function(req, res){
+  res.render('vbdportal');
 });
 
 app.use("/",router);

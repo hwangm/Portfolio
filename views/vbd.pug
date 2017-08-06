@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    h1.mt-5 Virtual Biospecimen Discovery (VBD)
+    h4 
+        small Website developed to connect researchers and biospecimens at UC Davis Medical Center
+    div#placeholderForImageCarousel
+        img.mt-3.img-fluid(src='/images/vbdapp.png')
+    h3.mt-3 Purpose
+    p 
+    | I created the VBD as part of my role as biobanking programmer for UC Davis Medical Center. 
+    | The website is a tool for researchers to locate and obtain specimens stored by other biobanks at UC Davis. 
+    p
+    | My responsibilities include design, development, testing, and documentation of the back-end, 
+    | front-end and database for the website. Additionally, I manage the ETL process for all biobanks importing specimen data
+    | into the VBD database. 
+    h3.mt-3 Background
+    p 
+    | At UC Davis, biobanks have historically been siloed, with any given biobank not knowing what other biobanks store in their freezers. 
+    | One of the key goals of the Biorepositories Core Resource (BCR) at UCD is to connect these biobanks and give 
+    | researchers greater access to the specimens they need for their studies. The VBD tool serves as a "matchmaker", 
+    | providing basic filtering on demographic and specimen details that allows researchers to determine which biobanks
+    | may have samples to share. Querying the VBD database returns a table of matching specimens grouped by biobank, 
+    | with contact information for the researcher to use.
+    h3.mt-3 Goals
+    p
+    | The target audience of the VBD website is researchers at UC Davis. Keeping that in mind, I designed the VBD 
+    | to be:
+    p
+        ul
+            li <b>Simple to use</b>: do not clutter the VBD with unnecessary pages and actions. 
+            li <b>Fast</b>: researchers often have multiple grants and studies going on at the same time. 
+            li <b>Visually appealing</b>: the website should have a clean, modern design with an easy to use interface. 
+    h3.mt-3 Technologies
+    p 
+        ul
+            li ASP.NET MVC (C#) with Entity Framework ORM
+            li MariaDB (MySQL)
+            li HTML5
+            li CSS3 with SASS preprocessing
+            li Javascript
+            li Highcharts (JS)
+block scripts
