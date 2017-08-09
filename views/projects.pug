@@ -1,15 +1,23 @@
 extends layout
 
 block styles
+    link(rel="stylesheet", href="/styles/projects.css")
 
 block content
-    h1 Project List
-    div.project-list-container
-        div#project1Container.project-container
-            h3 Wings
-        div#project2Container.project-container
-        div#project3Container.project-container
-        div#project4Container.project-container
+    h1.mt-5 Project List
+    .project-list-container.row.mt-5
+        .col-12
+            .row
+                a(href='/VBD')#project1Container.project-container.d-flex.flex-row.justify-content-center.align-items-center.col-6
+                    .project-name Virtual Biospecimen Discovery
+                a(href='/VBDPortal')#project2Container.project-container.d-flex.flex-row.justify-content-center.align-items-center.col-6
+                    .project-name VBD Portal
+        .col-12.mt-2
+            .row
+                a(href='/Wings')#project3Container.project-container.d-flex.flex-row.justify-content-center.align-items-center.col-6
+                    .project-name Wings
+                a(href='/Percept')#project4Container.project-container.d-flex.flex-row.justify-content-center.align-items-center.col-6
+                    .project-name PERCEPT
 
 block scripts
     script(src="/scripts/projects.js")

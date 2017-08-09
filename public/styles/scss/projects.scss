@@ -1,0 +1,27 @@
+.project-container{
+    height: 250px;
+    &:hover{
+        opacity: 0.5;
+        transition: opacity .5s ease-out;
+        color: black;
+    }
+    color: black;
+}
+#project1Container{
+    background: #3F88C5;
+}
+#project2Container{
+    background: #3DD6D0;
+}
+#project3Container{
+    background: #44BBA4;
+}
+#project4Container{
+    background: #71F79F;
+    
+}
+.project-name{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
