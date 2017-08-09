@@ -4,10 +4,6 @@ block content
     h1.mt-5 Virtual Biospecimen Discovery (VBD)
     h4 
         small Website developed to connect researchers and biospecimens at UC Davis Medical Center
-    div#vbdSlick
-        img.mt-3.img-fluid(src='/images/vbdapp2.png')
-        img.mt-3.img-fluid(src='/images/vbdapp3.png')
-        img.mt-3.img-fluid(src='/images/vbdapp4.png')
     h3.mt-3 Purpose
     p 
     | I created the VBD as part of my role as biobanking programmer for UC Davis Medical Center. 
@@ -16,6 +12,7 @@ block content
     | My responsibilities include design, development, testing, and documentation of the back-end, 
     | front-end and database for the website. Additionally, I manage the ETL process for all biobanks importing specimen data
     | into the VBD database. 
+    
     h3.mt-3 Background
     p 
     | At UC Davis, biobanks have historically been siloed, with any given biobank not knowing what other biobanks store in their freezers. 
@@ -24,10 +21,27 @@ block content
     | providing basic filtering on demographic and specimen details that allows researchers to determine which biobanks
     | may have samples to share. Querying the VBD database returns a table of matching specimens grouped by biobank, 
     | with contact information for the researcher to use.
+
+    div#vbdSlick
+        img.mt-3.img-fluid(src='/images/vbdapp2.png')
+        img.mt-3.img-fluid(src='/images/vbdapp3.png')
+        img.mt-3.img-fluid(src='/images/vbdapp4.png')
+    
     h3.mt-3 Goals
-    p
-    | The target audience of the VBD website is researchers at UC Davis. Keeping that in mind, I designed the VBD 
-    | to be:
+    .row
+        .col-4
+            .goal-container
+                .goal-name Simple
+                .goal-icon 
+        .col-4
+            .goal-container
+                .goal-name Fast
+                .goal-icon
+        .col-4
+            .goal-container
+                .goal-name Attractive
+                .goal-icon
+
     p
         ul
             li <b>Simple to use</b>: do not clutter the VBD with unnecessary pages and actions. 
