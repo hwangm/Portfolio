@@ -1,7 +1,16 @@
 extends layout
 
+block styles
+
 block content
-    
+    h1 Project List
+    div.project-list-container
+        div#project1Container.project-container
+            h3 Wings
+        div#project2Container.project-container
+        div#project3Container.project-container
+        div#project4Container.project-container
+
 block scripts
     script(src="/scripts/projects.js")
       

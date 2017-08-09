@@ -1,0 +1,49 @@
+extends layout
+
+block content
+    h1.mt-5 PERCEPT Medication Reconciliation
+    h4 
+        small Website developed to assist medication reconciliation for PERCEPT precision medicine project. 
+    div#perceptSlick
+        img.mt-3.img-fluid(src='/images/vbdapp2.png')
+        img.mt-3.img-fluid(src='/images/vbdapp3.png')
+        img.mt-3.img-fluid(src='/images/vbdapp4.png')
+    h3.mt-3 Purpose
+    p 
+    | This PERCEPT app is an internal tool designed to display and update medication data for patients enrolled in the 
+    | PERCEPT precision medicine project, jointly sponsored by UC Davis and UCSF. 
+    p
+    | Although the purpose of this website was fairly narrow in scope, I contributed in ways beyond the typical design, development, and testing of the website itself. 
+    | To pull and update this medication data, a coworker and I jointly developed a RESTful server that utilizes the FHIR (Fast Health Interoperability Resource) protocol
+    | for sending and receiving health information. The website interacts with the FHIR server via simple RESTful API calls. I helped write the Java methods that get called
+    | by incoming requests and create the data access layer that reads/writes to an Oracle SQL database. 
+    h3.mt-3 Background
+    p 
+    | The PERCEPT project was started as part of a push for "precision medicine", which is the tailoring of medical interventions and treatments to the individual patient. 
+    | In order to create these personalized treatments, more data must be collected from when the patient is out of clinic, during daily routines. Part of the PERCEPT project
+    | consists of enrolled patients utilizing a mobile app that saves patient-generated health data such as heart rate, blood pressure, and medications taken at home, to 
+    | substantiate the health data typically collected at the clinic. When the doctor changes a patient's medication list, a physician in the PERCEPT staff must reconcile 
+    | the medication list for substantial changes to show the patient. This website will make it easy for these physicians to see what new orders have been placed and then
+    | subsequently take the appropriate action for the patient's medication list. 
+
+    h3.mt-3 Goals
+    p
+    | THe target audience of the app is physicians on the PERCEPT project. Thus I designed the app to be extremely simple and clear, showing all the necessary information that would
+    | allow the physician to quickly take the appropriate action (deleting the medication from the list, replacing an old medication, or adding it as a new medication). 
+    p
+        ul
+            li <b>Clear</b>: show only what the physician needs to make a decision (name, dosage, quantity)
+            li <b>Fast</b>: the physician should not be on the website for more than a couple minutes reconciling medications
+            li <b>Correct</b>: actions taken on the website should initiate the appropriate changes on the FHIR server
+            //- Rearrange goals into 1x3 grid (goal 1 | goal 2 | goal 3), think about adding icons to represent each goal
+    h3.mt-3 Technologies
+    p 
+        ul
+            li Django (Python) web framework
+            li Oracle SQL
+            li Javascript
+            li Shibboleth SSO integration
+            li Apache 
+            li Hapi FHIR Java server 
+block scripts
+    script(src="/scripts/percept.js")

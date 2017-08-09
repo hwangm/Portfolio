@@ -1,0 +1,3 @@
+$('#perceptSlick').slick({
+    dots: true
+});
