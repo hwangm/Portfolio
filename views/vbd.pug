@@ -1,5 +1,8 @@
 extends layout
 
+block styles
+    link(rel="stylesheet", href="/styles/vbd.css")
+
 block content
     h1.mt-5 Virtual Biospecimen Discovery (VBD)
     h4 
@@ -29,18 +32,21 @@ block content
     
     h3.mt-3 Goals
     .row
-        .col-4
-            .goal-container
-                .goal-name Simple
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
+                .goal-name Easy to Use
                 .goal-icon 
-        .col-4
-            .goal-container
+                    i.fa.fa-smile-o(aria-hidden="true")
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
                 .goal-name Fast
                 .goal-icon
-        .col-4
-            .goal-container
-                .goal-name Attractive
+                    i.fa.fa-bolt(aria-hidden="true")
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
+                .goal-name Visually Appealing
                 .goal-icon
+                    i.fa.fa-css3(aria-hidden="true")
 
     p
         ul
