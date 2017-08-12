@@ -1,17 +1,12 @@
 extends layout
 
+block styles
+    link(rel="stylesheet", href="/styles/vbd.css")
+
 block content
     h1.mt-5 Virtual Biospecimen Discovery (VBD)
     h4 
         small Website developed to connect researchers and biospecimens at UC Davis Medical Center
-    h3.mt-3 Purpose
-    p 
-    | I created the VBD as part of my role as biobanking programmer for UC Davis Medical Center. 
-    | The website is a tool for researchers to locate and obtain specimens stored by other biobanks at UC Davis. 
-    p
-    | My responsibilities include design, development, testing, and documentation of the back-end, 
-    | front-end and database for the website. Additionally, I manage the ETL process for all biobanks importing specimen data
-    | into the VBD database. 
     
     h3.mt-3 Background
     p 
@@ -21,7 +16,16 @@ block content
     | providing basic filtering on demographic and specimen details that allows researchers to determine which biobanks
     | may have samples to share. Querying the VBD database returns a table of matching specimens grouped by biobank, 
     | with contact information for the researcher to use.
-
+    h3.mt-3 Purpose
+    p 
+    | I created the VBD as part of my role as biobanking programmer for UC Davis Medical Center. 
+    | The website is a tool for researchers to locate and obtain specimens stored by other biobanks at UC Davis. 
+    p
+    | My responsibilities include design, development, testing, and documentation of the back-end, 
+    | front-end and database for the website. Additionally, I manage the ETL process for all biobanks importing specimen data
+    | into the VBD database. 
+    
+    
     div#vbdSlick
         img.mt-3.img-fluid(src='/images/vbdapp2.png')
         img.mt-3.img-fluid(src='/images/vbdapp3.png')
@@ -29,18 +33,21 @@ block content
     
     h3.mt-3 Goals
     .row
-        .col-4
-            .goal-container
-                .goal-name Simple
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
+                .goal-name Easy to Use
                 .goal-icon 
-        .col-4
-            .goal-container
+                    i.fa.fa-smile-o(aria-hidden="true")
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
                 .goal-name Fast
                 .goal-icon
-        .col-4
-            .goal-container
-                .goal-name Attractive
+                    i.fa.fa-bolt(aria-hidden="true")
+        .col-4.d-flex.flex-row.justify-content-center.align-items-center
+            .goal-container.d-flex.flex-column.justify-content-center.align-items-center
+                .goal-name Visually Appealing
                 .goal-icon
+                    i.fa.fa-css3(aria-hidden="true")
 
     p
         ul
