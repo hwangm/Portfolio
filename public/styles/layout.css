@@ -10,8 +10,8 @@ body {
   width: 30%;
 }
 
-#footer {
-  height: 300px;
+.footer {
+  height: 250px;
   background-color: #2D3047;
   color: white;
 }
@@ -22,4 +22,12 @@ body {
 
 .phone {
   font-size: 30px !important;
+}
+
+.footer-main-content {
+  height: 75% !important;
+}
+
+.footer-made-by {
+  height: 25% !important;
 }
