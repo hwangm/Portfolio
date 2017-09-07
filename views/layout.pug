@@ -28,16 +28,20 @@ html
         .row.h-100
           .container.h-100
             .row.h-75.mt-2
-              .col-4.about-section
-                .row
-                  .col-6.about-picture
-                    img.img-fluid.rounded(src='/images/car.jpg', width=100, height=100)
-                  .col-6.about-text Matthew Hwang
-                .row
+              .col-4.about-section.d-flex.flex-column.justify-content-flex-start.align-items-stretch
+                //- .row
+                //-   .col-6.about-picture
+                //-     img.img-fluid.rounded(src='/images/car.jpg', width=100, height=100)
+                //-   .col-6.about-text Matthew Hwang
+                .row.align-self-center
+                  .col-12.name-row.d-flex.flex-row.justify-content-flex-start.align-items-center
+                    i.fa.fa-user.phone(aria-hidden="true")
+                    span.mx-2 Matthew Hwang
+                .row.align-self-center
                   .col-12.phone-row.d-flex.flex-row.justify-content-flex-start.align-items-center
                     i.fa.fa-mobile.phone(aria-hidden="true")
-                    span.mx-2  (262)-212-2199
-                .row
+                    span.mx-2 (262)-212-2199
+                .row.align-self-center
                   .col-12.email-row.d-flex.flex-row.justify-content-flex-start.align-items-center
                     i.fa.fa-envelope.email(aria-hidden="true")
                     span.mx-2
