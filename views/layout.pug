@@ -23,44 +23,57 @@ html
             li.nav-item
               a.nav-link(href='/About') About Me
       div.container
-        block content
-      div.mt-5.container-fluid#footer
-        .row.h-100
-          .container.h-100
-            .row.h-75.mt-2
-              .col-4.about-section.d-flex.flex-column.justify-content-flex-start.align-items-stretch
-                //- .row
-                //-   .col-6.about-picture
-                //-     img.img-fluid.rounded(src='/images/car.jpg', width=100, height=100)
-                //-   .col-6.about-text Matthew Hwang
-                .row.align-self-center
-                  .col-12.name-row.d-flex.flex-row.justify-content-flex-start.align-items-center
-                    i.fa.fa-user.phone(aria-hidden="true")
-                    span.mx-2 Matthew Hwang
-                .row.align-self-center
-                  .col-12.phone-row.d-flex.flex-row.justify-content-flex-start.align-items-center
-                    i.fa.fa-mobile.phone(aria-hidden="true")
-                    span.mx-2 (262)-212-2199
-                .row.align-self-center
-                  .col-12.email-row.d-flex.flex-row.justify-content-flex-start.align-items-center
-                    i.fa.fa-envelope.email(aria-hidden="true")
-                    span.mx-2
-                      a(href="mailto:hw4ng_m@yahoo.com", target="_blank") hw4ng_m@yahoo.com
-                .row.mt-2
-                  .col-3.d-flex.justify-content-center 
-                    a(href='https://www.facebook.com/matthew.y.hwang', target='_blank')
-                      i.fa.fa-facebook-square.footer-icon(aria-hidden='true')
-                  .col-3.d-flex.justify-content-center 
-                    a(href='https://www.linkedin.com/in/matthew-hwang-46709535/', target='_blank')
-                      i.fa.fa-linkedin-square.footer-icon(aria-hidden='true')
-                  .col-3.d-flex.justify-content-center 
-                    a(href='https://twitter.com/thahwangsta', target='_blank')
-                      i.fa.fa-twitter-square.footer-icon(aria-hidden='true')
-                  .col-3.d-flex.justify-content-center
-                    a(href='https://github.com/hwangm', target='_blank')
-                      i.fa.fa-github-square.footer-icon(aria-hidden='true')
-            .row.h-25
-              .col.text-center Made by Matthew Hwang in 2017            
+        block content        
+      footer.mt-5.footer#footer
+        .container.d-flex.flex-column.justify-content-flex-start.align-items-stretch.h-100
+          .row.footer-main-content
+            .col-4.about-section.d-flex.flex-column.justify-content-between.align-items-stretch.h-100
+              .row.d-flex.flex-row.justify-content-flex-start.align-items-center.mt-2.mb-2
+                .col-4.about-picture
+                  img.rounded-circle(src='/images/hwang.jpg', height=60, width=60)
+                .col-8.about-text Matthew Hwang
+              .row
+                .col-12.phone-row.d-flex.flex-row.justify-content-flex-start.align-items-center
+                  i.fa.fa-mobile.phone(aria-hidden="true")
+                  span.mx-2  (262)-212-2199
+              .row
+                .col-12.email-row.d-flex.flex-row.justify-content-flex-start.align-items-center
+                  i.fa.fa-envelope.email(aria-hidden="true")
+                  span.mx-2
+                    a(href="mailto:hw4ng_m@yahoo.com", target="_blank") hw4ng_m@yahoo.com
+              .row.mt-2
+                .col-3.d-flex.justify-content-center 
+                  a(href='https://www.facebook.com/matthew.y.hwang', target='_blank')
+                    i.fa.fa-facebook-square.footer-icon(aria-hidden='true')
+                .col-3.d-flex.justify-content-center 
+                  a(href='https://www.linkedin.com/in/matthew-hwang-46709535/', target='_blank')
+                    i.fa.fa-linkedin-square.footer-icon(aria-hidden='true')
+                .col-3.d-flex.justify-content-center 
+                  a(href='https://twitter.com/thahwangsta', target='_blank')
+                    i.fa.fa-twitter-square.footer-icon(aria-hidden='true')
+                .col-3.d-flex.justify-content-center
+                  a(href='https://github.com/hwangm', target='_blank')
+                    i.fa.fa-github-square.footer-icon(aria-hidden='true')
+            .col-8.nav-section
+              .row.mt-2
+                .col-4.about-me
+                  .footer-nav-header About me
+                  .footer-nav-text 
+                    | I aim to please
+                .col-6.projects-list
+                  .footer-nav-header Projects
+                  .footer-nav-links
+                    a(href='/VBD') Virtual Biospecimen Discovery (VBD)
+                    br
+                    a(href='/VBDPortal') VBD Portal
+                    br
+                    a(href='/Wings') Wings
+                    br
+                    a(href='/Percept') PERCEPT Medication Reconciliation
+
+                .col-4
+          .row.footer-made-by.d-flex.flex-row.justify-content-center.align-items-center
+            .col.text-center Made by Matthew Hwang in 2017            
 
                   
       script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
